@@ -1,5 +1,4 @@
 import streamlit as st
-import joblib
 import pandas as pd
 import numpy as np
 import os
@@ -95,4 +94,5 @@ if submitted:
         st.error(f"🚨 The customer is **likely to CHURN**.\nProbability: {prob:.2%}")
     else:
         st.success(f"💚 The customer is **likely to STAY**.\nProbability: {prob:.2%}")
+
 
